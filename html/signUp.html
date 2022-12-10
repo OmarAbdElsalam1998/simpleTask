@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Screen</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+     <!-- FontAwsome icon  -->
+     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+    <link rel="stylesheet" href="../css/globalstyle.css">
+    <link rel="stylesheet" href="../css/signUp.css">
+    
+
+</head>
+<body>
+
+    <!-- Start sign up section -->
+    <section class="signUp-section py-3 p-md-5 m-md-5 rounded ">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-6 h-auto">
+                    <div class="section-image rounded overflow-hidden me-2 h-auto ">
+                        <img src="../images/signup.jpg" alt="signup image">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="section-content text-center text-lg-start mt-4 mt-lg-0 ms-2">
+                        <h3 class="mb-3">Create Account</h3>
+                        <p>Go ahead and sign up, let everyone know how awesome you are!</p>
+                        <form id="signUpForm" class="text-start">
+                            <div class="form-group mb-3">
+                                <div class="input-box d-flex align-items-center">
+                                    <div class="icon pe-3">
+                                        <i class="fa-regular fa-user fa-lg"></i>
+                                    </div>
+                                    <div class="input ps-2 w-100">
+                                        <input type="text" placeholder="Username" id="username" onblur="checkUsername()">
+                                    </div>
+                                    
+                                </div>
+                                <small class=" d-inline error-message pt-2 text-danger" id="usernameErrorMessage"></small>
+                            </div>
+                            <div class="form-group mb-3">
+                                <div class="input-box d-flex align-items-center">
+                                    <div class="icon pe-3">
+                                        <i class="fa-regular fa-envelope fa-lg"></i>
+                                    </div>
+                                    <div class="input ps-2 w-100">
+                                        <input type="text" placeholder="Email" id="email" data-target="checkEmail" onblur="checkEmail()">
+                                    </div>
+                                    
+                                </div>
+                                <small class="error-message pt-2 text-danger"  id="EmailErrorMessage"></small>
+                            </div>
+                            <div class="form-group mb-3">
+                                <div class="input-box d-flex align-items-center">
+                                    <div class="icon pe-3">
+                                        <i class="fa-regular fa-unlock fa-lg"></i>
+                                    </div>
+                                    <div class="input ps-2 w-100">
+                                        <input type="password" placeholder="Password" id="password" onblur="checkPassword()">
+                                    </div>
+                                    
+                                </div>
+                                <small class="error-message pt-2 text-danger"  id="passwordErrorMessage"></small>
+                            </div>
+                            <div class="form-group mb-3">
+                                <div class="input-box d-flex align-items-center">
+                                    <div class="icon pe-3">
+                                        <i class="fa-regular fa-lock fa-lg"></i>
+                                    </div>
+                                    <div class="input ps-2 w-100">
+                                        <input type="password" placeholder="Confirm Password" id="confirmPassword" onblur="checkConfirmPassword()">
+                                    </div>
+                                    
+                                </div>
+                                <small class="error-message pt-2 text-danger"  id="confirmPasswordErrorMessage"></small>
+                            </div>
+                           
+                            <button class="custom-btn p-3 mb-4">Create Account</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+    <!-- End Sign up section -->
+
+    <script src="../js/signUp.js"></script>
+</body>
+</html>

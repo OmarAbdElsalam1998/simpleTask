@@ -1,0 +1,23 @@
+/*
+**
+**Start succeed screen section
+*/
+
+.success-section{
+    background-color: rgba(245, 247, 255, 0.85);
+}
+.success-section .section-content h3{
+    font-weight: bold;
+    font-size: 35px;
+    text-transform: capitalize;
+}
+@media only screen and (max-width: 767px) {
+    .success-section{
+        height: 100%;
+        width: 100%;
+    }
+}
+/*
+**
+**End succeed screen section
+*/

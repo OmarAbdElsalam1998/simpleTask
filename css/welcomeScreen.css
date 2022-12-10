@@ -1,0 +1,25 @@
+/*
+**
+**Start welcome screen section
+*/
+
+.welcome-body{
+    background-color: rgba(245, 247, 255, 0.85);
+}
+.welcome-body .section-content h3{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 767px) {
+    .welcome-body{
+        height: 100%;
+        width: 100%;
+    }
+}
+/*
+**
+**End welcome screen section
+*/

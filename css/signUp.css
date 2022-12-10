@@ -1,0 +1,56 @@
+/*
+**
+**Start signUp  section
+*/
+
+.signUp-section{
+    background-color: rgba(245, 247, 255, 0.85);
+}
+.signUp-section .section-image img{ 
+    width: 100%;
+    height: 100%;
+}
+.signUp-section .section-content h3{
+    font-weight: 600;
+    font-size: 42px;
+    text-transform: capitalize;
+    color: #2D2D2D;
+}
+.signUp-section .section-content .input-box{
+    padding: 15px;
+    background-color: #FFF;
+    border: 2px solid #DBE3FF;
+    border-radius: 5px;
+
+}
+.signUp-section .section-content .input-box .icon{
+    border-right:1px solid #DBE3FF;
+    color: #9CADF2;
+}
+.signUp-section .section-content .input-box .input input{
+    border: none;
+    outline: none;
+    display: block;
+    width: 100%;
+}
+::-webkit-input-placeholder{
+    font-weight: 400;
+    color: #3B3B3B;
+    
+    ;
+}
+
+@media only screen and (max-width: 767px) {
+   .signUp-section{
+        height: 100%;
+        width: 100%;
+    }
+    .signUp-section .section-image img{
+        height: 300px;
+        object-fit: fill;
+    }
+}
+/*
+**
+**End SignUp section
+*/
